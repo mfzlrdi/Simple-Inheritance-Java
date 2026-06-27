@@ -7,30 +7,33 @@ package com.inheritance;
 
 /**
  *
- * @author Fani
+ * @author Corvoo
  */
-public class ChildClass extends ParentClass{
+public class ChildClass extends ParentClass {
     int usia;
-    String judul="Child Class";
+    String judul = "Child Class";
+
     @Override
-           
-    void tampil(){
-         System.out.println("Nama Child = " + this.nama);
-         System.out.println("Usia Child = " + this.usia + "tahun");
-     }
-    void tampilSub(){
+
+    void tampil() {
+        System.out.println("Nama Child = " + this.nama);
+        System.out.println("Usia Child = " + this.usia + "tahun");
+    }
+
+    void tampilSub() {
         System.out.println("Data = " + this.judul);
     }
-    void tampilSuper(){
+
+    void tampilSuper() {
         System.out.println("Data = " + super.judul);
     }
-    
-    void tampilNama(){
+
+    void tampilNama() {
         System.out.println("Nama : " + super.nama);
         System.out.println("Nama : " + this.usia);
     }
-    
-    ChildClass(String nama, int usia){
+
+    ChildClass(String nama, int usia) {
         super(nama);
         this.usia = usia;
     }

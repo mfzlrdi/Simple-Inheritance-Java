@@ -7,18 +7,18 @@ package com.inheritance;
 
 /**
  *
- * @author Fani
+ * @author Corvoo
  */
-public class PerahuLayar extends Laut{
+public class PerahuLayar extends Laut {
     double kecepatanMesin;
-    
-    PerahuLayar(String nama, String mesin, String jenis, String tempat, double kecepatanMesin){
+
+    PerahuLayar(String nama, String mesin, String jenis, String tempat, double kecepatanMesin) {
         super(nama, mesin, jenis, tempat);
         this.kecepatanMesin = kecepatanMesin;
     }
-    
+
     @Override
-    void view(){
+    void view() {
         super.view();
         System.out.println("Kecepatan Mesin : " + kecepatanMesin + "knot");
     }

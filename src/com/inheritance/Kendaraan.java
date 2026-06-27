@@ -7,27 +7,27 @@ package com.inheritance;
 
 /**
  *
- * @author Fani
+ * @author Corvoo
  */
 public class Kendaraan {
     String nama;
     String mesin;
     String jenis;
-    
-    Kendaraan(String nama, String mesin, String jenis){
+
+    Kendaraan(String nama, String mesin, String jenis) {
         this.nama = nama;
         this.mesin = mesin;
         this.jenis = jenis;
     }
-    
-    Kendaraan(String nama, String jenis){
+
+    Kendaraan(String nama, String jenis) {
         this.nama = nama;
         this.jenis = jenis;
     }
-    
-    void view(){
+
+    void view() {
         System.out.println("Nama : " + nama);
         System.out.println("Mesin : " + mesin);
-        System.out.println("Jenis : " + jenis);        
+        System.out.println("Jenis : " + jenis);
     }
 }

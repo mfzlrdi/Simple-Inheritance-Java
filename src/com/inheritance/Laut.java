@@ -7,18 +7,18 @@ package com.inheritance;
 
 /**
  *
- * @author Fani
+ * @author Corvoo
  */
-public class Laut extends Kendaraan{
+public class Laut extends Kendaraan {
     String tempat;
-    
-    Laut(String nama, String mesin, String jenis, String tempat){
+
+    Laut(String nama, String mesin, String jenis, String tempat) {
         super(nama, mesin, jenis);
         this.tempat = tempat;
     }
-    
+
     @Override
-    void view(){
+    void view() {
         System.out.print("===== Data Kendaraan Laut =====\n");
         super.view();
         System.out.println("Tempat : " + tempat);

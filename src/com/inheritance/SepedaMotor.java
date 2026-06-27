@@ -7,37 +7,37 @@ package com.inheritance;
 
 /**
  *
- * @author Fani
+ * @author Corvoo
  */
-public class SepedaMotor extends Darat{
+public class SepedaMotor extends Darat {
     int kapasitasMesin;
     String deskripsi;
-    
-    SepedaMotor(String nama, String mesin, String jenis, String tempat, int kapasitasMesin){
+
+    SepedaMotor(String nama, String mesin, String jenis, String tempat, int kapasitasMesin) {
         super(nama, mesin, jenis, tempat);
         this.kapasitasMesin = kapasitasMesin;
     }
-    
-    SepedaMotor(String nama, String jenis, String tempat, int kapasitasMesin){
-       super(nama, jenis, tempat);
-       this.kapasitasMesin = kapasitasMesin; 
+
+    SepedaMotor(String nama, String jenis, String tempat, int kapasitasMesin) {
+        super(nama, jenis, tempat);
+        this.kapasitasMesin = kapasitasMesin;
     }
-    
-    SepedaMotor(String nama, String jenis, String tempat, int kapasitasMesin, String deskripsi){
-       super(nama, jenis, tempat);
-       this.kapasitasMesin = kapasitasMesin; 
-       this.deskripsi = deskripsi;
+
+    SepedaMotor(String nama, String jenis, String tempat, int kapasitasMesin, String deskripsi) {
+        super(nama, jenis, tempat);
+        this.kapasitasMesin = kapasitasMesin;
+        this.deskripsi = deskripsi;
     }
-    
+
     @Override
-    void view(){
+    void view() {
         super.view();
         System.out.println("Kapasitas Mesin : " + kapasitasMesin + "CC");
     }
-    
-    void viewDetail(){
+
+    void viewDetail() {
         super.view();
         System.out.println("Kapasitas Mesin : " + kapasitasMesin + "CC");
         System.out.println("Deskripsi : " + deskripsi);
-    }   
+    }
 }

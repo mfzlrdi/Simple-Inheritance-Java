@@ -7,23 +7,23 @@ package com.inheritance;
 
 /**
  *
- * @author Fani
+ * @author Corvoo
  */
 public class Darat extends Kendaraan {
     String tempat;
-    
-    Darat(String nama, String mesin, String jenis, String tempat){
+
+    Darat(String nama, String mesin, String jenis, String tempat) {
         super(nama, mesin, jenis);
         this.tempat = tempat;
     }
-    
-    Darat(String nama, String jenis, String tempat){
+
+    Darat(String nama, String jenis, String tempat) {
         super(nama, jenis);
         this.tempat = tempat;
     }
-    
+
     @Override
-    void view(){
+    void view() {
         System.out.print("===== Data Kendaraan Darat =====\n");
         super.view();
         System.out.println("Tempat : " + tempat);

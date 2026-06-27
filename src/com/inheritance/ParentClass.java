@@ -7,17 +7,17 @@ package com.inheritance;
 
 /**
  *
- * @author Fani
+ * @author Corvoo
  */
 public class ParentClass {
-     String nama;
-     String judul="Parent Class";
-     
-     void tampil(){
-         System.out.println("Nama Parent = " + this.nama);
-     }
-     
-     ParentClass(String nama){
-         this.nama = nama;
-     }
+    String nama;
+    String judul = "Parent Class";
+
+    void tampil() {
+        System.out.println("Nama Parent = " + this.nama);
+    }
+
+    ParentClass(String nama) {
+        this.nama = nama;
+    }
 }
